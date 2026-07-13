@@ -19,7 +19,7 @@ order size) before designing any retention strategy.
 
 ## 2. Monthly Revenue Trend
 
-![Monthly Revenue](chart_monthly_revenue.png)
+![Monthly Revenue](chart_aov_by_city.png)
 
 Revenue swings noticeably month to month — from a low of ₹87k (Feb) to a high of ₹163k (Nov),
 with growth swings as large as +44.5% (April) and -32.3% (June). There's a loose upward drift

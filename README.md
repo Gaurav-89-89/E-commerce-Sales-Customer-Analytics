@@ -39,7 +39,6 @@ This project answers:
 Full write-up: `FINDINGS.md`
 
 ## Charts
-![Top Products by Revenue](charts/chart_top_products.png)
 
 5 charts covering revenue trend, top products, return rates, AOV by city, and cohort repeat rate — all in the `charts/` folder and embedded inline in `FINDINGS.md`.
 

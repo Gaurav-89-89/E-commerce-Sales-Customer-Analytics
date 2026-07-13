@@ -12,18 +12,28 @@ This project answers:
 5. Do customers come back and buy again within 90 days of their first order?
 6. Does average order value differ meaningfully by city?
 
-## Dataset
-460 synthetic orders across 110 customers and 18 products (Jan–Dec 2024), spread across 5 relational tables: `customers`, `products`, `orders`, `order_items`, and `returns`. Built to reflect realistic e-commerce patterns — skewed customer spend, variable return rates, and fluctuating monthly order volume.
+Dataset
 
-> Synthetic data was used since this is a practice/portfolio project. Patterns (spend concentration, return variability, order timing) are modeled to behave like real e-commerce data, not purely randomly generated.
+460 synthetic orders across 110 customers and 18 products (Jan–Dec 2024), spread across 5 relational tables: customers, products, orders, order_items, and returns. Built to reflect realistic e-commerce patterns — skewed customer spend, variable return rates, and fluctuating monthly order volume.
+
+
+Synthetic data was used since this is a practice/portfolio project. Patterns (spend concentration, return variability, order timing) are modeled to behave like real e-commerce data, not purely randomly generated.
+
+
+
+
+Dataset generated with the help of Claude (Anthropic).
+
+
 
 ## Project Workflow
-1. **Schema Design** — designed 5 relational tables covering customers, products, orders, order items, and returns
-2. **Data Generation (SQL)** — wrote the dataset directly as `CREATE TABLE` + `INSERT` statements (`ecommerce_1500.sql`), run in [sqliteonline.com](https://sqliteonline.com/)
-3. **Analysis Queries (SQL)** — wrote and ran 6 queries covering multi-table joins, CTEs, and window functions (`NTILE`, `LAG`, `RANK`)
-4. **Result Export** — exported each query's output as CSV (`results_*.csv`)
-5. **Visualization (Python)** — used pandas and matplotlib in Google Colab to turn each result into a chart (`generate_charts_simple.py`)
-6. **Insights** — translated each result into a plain-English takeaway (`FINDINGS.md`)
+
+Schema Design — designed 5 relational tables covering customers, products, orders, order items, and returns
+Data Generation (SQL) — used Claude to generate the dataset directly as CREATE TABLE + INSERT statements (ecommerce_1500.sql), run in sqliteonline.com
+Analysis Queries (SQL) — wrote and ran 6 queries covering multi-table joins, CTEs, and window functions (NTILE, LAG, RANK)
+Result Export — exported each query's output as CSV (results_*.csv)
+Visualization (Python) — used pandas and matplotlib in Google Colab to turn each result into a chart (generate_charts_simple.py)
+Insights — translated each result into a plain-English takeaway (FINDINGS.md)
 
 ## Key Findings
 | Metric | Value |

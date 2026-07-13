@@ -43,10 +43,10 @@ Full write-up: `FINDINGS.md`
 5 charts covering revenue trend, top products, return rates, AOV by city, and cohort repeat rate — all in the `charts/` folder and embedded inline in `FINDINGS.md`.
 
 ## Tools Used
-- **sqliteonline.com** — building the database (`CREATE TABLE`/`INSERT`) and running all analysis queries
-- **Python** (pandas, matplotlib) via **Google Colab** — turning query results into charts
-- **SQL** — multi-table joins, CTEs, window functions (`NTILE`, `LAG`, `RANK`), date functions, correlated subqueries
-
+- Claude — generated the synthetic dataset (SQL CREATE TABLE/INSERT statements)
+- sqliteonline.com — building the database (CREATE TABLE/INSERT) and running all analysis queries
+- Python (pandas, matplotlib) via Google Colab — turning query results into charts
+- SQL — multi-table joins, CTEs, window functions (NTILE, LAG, RANK), date functions, correlated subqueries
 ## Repository Structure
 ```
 ├── ecommerce_1500.sql          → builds all 5 tables + loads data

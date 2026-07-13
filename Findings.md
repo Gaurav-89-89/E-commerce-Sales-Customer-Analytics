@@ -19,7 +19,7 @@ order size) before designing any retention strategy.
 
 ## 2. Monthly Revenue Trend
 
-![Monthly Revenue](charts/chart_top_products.png)
+![Monthly Revenue](charts/chart_monthly_revenue.png)  
 
 Revenue swings noticeably month to month — from a low of ₹87k (Feb) to a high of ₹163k (Nov),
 with growth swings as large as +44.5% (April) and -32.3% (June). There's a loose upward drift
@@ -33,7 +33,7 @@ read too much into.
 
 ## 3. Product Return Rates
 
-![Return Rates](chart_return_rates.png)
+![Return Rates](charts/chart_return_rates.png)
 
 **Coffee Mug Set** has the highest return rate at 18.5%, followed by **Power Bank** and
 **Table Lamp** (both 16.7%). Home and Electronics categories show up most often in the
@@ -49,7 +49,7 @@ some clustering by category is coincidental.
 
 ## 4. Top Products by Revenue
 
-![Top Products](chart_top_products.png)
+![Top Products](charts/chart_top_products.png)
 
 **Smartwatch** is the clear #1 by revenue (₹2.52L), well ahead of #2 Bluetooth Speaker
 (₹1.47L) — driven by its high unit price (₹3,999) even though Power Bank and Football
@@ -65,7 +65,7 @@ than Smartwatch, but earns far less revenue).
 
 ## 5. Repeat Purchase Behavior (Cohorts)
 
-![Cohort Repeat Rate](chart_cohort_repeat.png)
+![Cohort Repeat Rate](charts/chart_cohort_repeat.png)
 
 Early-year cohorts show strong repeat rates: Feb 2024 customers hit 63.6% repeat-within-90-days,
 and Jan 2024 hit 58.3%. Rates dip and get noisier through the middle of the year, and the last
@@ -80,7 +80,7 @@ had a fair chance to show a repeat purchase yet, so recent months are structural
 
 ## 6. Average Order Value by City
 
-![AOV by City](chart_aov_by_city.png)
+![AOV by City](charts/chart_aov_by_city.png)
 
 AOV is fairly tight across all 7 cities — everything falls between ₹3,213 (Delhi) and ₹3,884
 (Pune), a difference of about 20%. Jaipur and Delhi have the highest order *counts* (93 and 89)
@@ -92,12 +92,6 @@ lever here, it's more likely order frequency/volume than upselling bigger basket
 
 ---
 
-## Honest caveats (worth saying out loud in an interview)
+## Honest caveats
 
-- This is a **synthetic dataset** (110 customers, 460 orders) — patterns like return rates and
-  city differences are close to random by construction, not driven by real customer behavior.
-- The **cohort repeat-rate** chart has a known bias: recent cohorts (and especially small ones
-  like Oct–Dec with only 2–5 customers) look noisy or artificially skewed. Call this out if
-  presenting the chart.
-- With only 460 orders across 12 months, month-to-month revenue swings are partly just noise
-  rather than a meaningful business signal.
+Note: this is a synthetic dataset built for practice — patterns like return rates and city differences are close to random by construction rather than reflecting real customer behavior, and small cohort sizes in later months make the repeat-purchase chart noisy.
